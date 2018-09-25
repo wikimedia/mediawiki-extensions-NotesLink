@@ -58,6 +58,10 @@ class NDLParser {
 			if ( empty( $matches[1] ) ) {
 				continue;
 			}
+			if ( in_array( $key, [ static::REPLICA, static::VIEW, static::NOTE ] ) ) {
+				$this->data[$key] = str_replace( [ ':', '-' ], '', $matches[1] );
+				continue;
+			}
 			$this->data[$key] = $matches[1];
 		}
 	}
