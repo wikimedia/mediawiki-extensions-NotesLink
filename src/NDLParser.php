@@ -50,11 +50,20 @@ class NDLParser {
 	protected function parse() {
 		$patterns = $this->config->get( 'ParserPatterns' );
 		foreach ( $this->getKeys() as $key ) {
-			if ( !$patterns[$key] ) {
+			if ( empty( $patterns[$key] ) ) {
 				continue;
 			}
-			$matches = [];
-			preg_match( $patterns[$key], $this->input, $matches );
+			if ( !is_array( $patterns[$key] ) ) {
+				$patterns[$key] = [ $patterns[$key] ];
+			}
+			foreach ( $patterns[$key] as $pattern ) {
+				$matches = [];
+				preg_match( $pattern, $this->input, $matches );
+				if ( empty( $matches[1] ) ) {
+					continue;
+				}
+				break;
+			}
 			if ( empty( $matches[1] ) ) {
 				continue;
 			}
@@ -62,7 +71,7 @@ class NDLParser {
 				$this->data[$key] = str_replace( [ ':', '-' ], '', $matches[1] );
 				continue;
 			}
-			$this->data[$key] = $matches[1];
+			$this->data[$key] = trim( $matches[1] );
 		}
 	}
 
