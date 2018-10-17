@@ -37,6 +37,7 @@ class NDLLinkRenderer {
 		} elseif ( $this->parser->get( NDLParser::HINT, false ) ) {
 			$href .= $this->parser->get( NDLParser::HINT );
 		}
+		$href = rtrim( $href, '/' );
 
 		if ( $this->parser->get( NDLParser::REPLICA, false ) ) {
 			$href .= "/{$this->parser->get( NDLParser::REPLICA )}";
