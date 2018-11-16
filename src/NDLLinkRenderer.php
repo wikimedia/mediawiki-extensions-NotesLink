@@ -2,8 +2,6 @@
 
 namespace NotesLink;
 
-use NotesLink\NDLParser;
-
 class NDLLinkRenderer {
 
 	/**
