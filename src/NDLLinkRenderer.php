@@ -12,7 +12,7 @@ class NDLLinkRenderer {
 
 	/**
 	 *
-	 * @var NDLParser $parser
+	 * @var NDLParser
 	 */
 	protected $parser = null;
 
