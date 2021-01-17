@@ -93,7 +93,7 @@ class NDLParser {
 	 *
 	 * @param string $key
 	 * @param mixed $default
-	 * @return string | $default
+	 * @return string
 	 */
 	public function get( $key, $default = '' ) {
 		if ( isset( $this->data[$key] ) ) {

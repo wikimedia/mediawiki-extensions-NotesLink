@@ -21,7 +21,7 @@ class NDLFactory {
 	/**
 	 * @param string $input
 	 * @param \Title|null $title
-	 * @return \NotesLink\NDLParser | null
+	 * @return NDLParser|null
 	 */
 	public function newParserFromInput( $input, \Title $title = null ) {
 		if ( !$title ) {
@@ -33,8 +33,8 @@ class NDLFactory {
 
 	/**
 	 *
-	 * @param \NotesLink\NDLParser $parser
-	 * @return \NotesLink\NDLLinkRenderer
+	 * @param NDLParser $parser
+	 * @return NDLLinkRenderer
 	 */
 	public function getLinkRenderer( \NotesLink\NDLParser $parser ) {
 		return new \NotesLink\NDLLinkRenderer( $parser, $this->config );
