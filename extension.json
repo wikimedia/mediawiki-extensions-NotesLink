@@ -16,6 +16,9 @@
 	"AutoloadNamespaces": {
 		"NotesLink\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"NotesLink\\Tests\\": "tests/phpunit/"
+	},
 	"MessagesDirs": {
 		"NotesLink": [
 			"i18n"
