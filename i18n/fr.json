@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Thibaut120094",
 			"Wladek92"
 		]
 	},
-	"noteslink-desc": "Ajoute la balise <code><nowiki><NDL></NDL></nowiki></code> , qui autorise le rendu du code \"Notes Data Link\" (NDL) en tant que lien web accessible"
+	"noteslink-desc": "Ajoute la balise <code><nowiki><NDL></NDL></nowiki></code> , qui autorise le rendu du code NDL (''Notes Data Link'', « lien de données de notes ») en tant que lien web accessible."
 }
