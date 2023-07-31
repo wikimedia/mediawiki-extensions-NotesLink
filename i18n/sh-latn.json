@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"noteslink-desc": "Dodaje oznaku <code><nowiki><NDL></NDL></nowiki></code> koja omogućuje prikaz koda \"Notes Data Link\" (NDL) kao link dostupan u vebu"
