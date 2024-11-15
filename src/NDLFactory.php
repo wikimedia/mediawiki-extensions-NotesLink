@@ -23,7 +23,7 @@ class NDLFactory {
 	 * @param \Title|null $title
 	 * @return NDLParser|null
 	 */
-	public function newParserFromInput( $input, \Title $title = null ) {
+	public function newParserFromInput( $input, ?\Title $title = null ) {
 		if ( !$title ) {
 			$title = \RequestContext::getMain()->getTitle();
 		}
