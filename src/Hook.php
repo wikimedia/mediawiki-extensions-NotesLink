@@ -7,13 +7,11 @@ use MediaWiki\MediaWikiServices;
 abstract class Hook {
 
 	/**
-	 *
 	 * @var \IContextSource
 	 */
 	private $context = null;
 
 	/**
-	 *
 	 * @var \Config
 	 */
 	private $config = null;
@@ -31,7 +29,6 @@ abstract class Hook {
 	}
 
 	/**
-	 *
 	 * @return \IContextSource
 	 */
 	protected function getContext() {
@@ -42,13 +39,11 @@ abstract class Hook {
 	}
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected static $configName = 'noteslink';
 
 	/**
-	 *
 	 * @return \Config
 	 */
 	protected function getConfig() {
@@ -61,7 +56,6 @@ abstract class Hook {
 	}
 
 	/**
-	 *
 	 * @return MediaWikiServices
 	 */
 	protected function getServices() {
@@ -88,7 +82,6 @@ abstract class Hook {
 	}
 
 	/**
-	 *
 	 * @return Factory
 	 */
 	protected function getFactory() {

@@ -11,25 +11,21 @@ class NDLParser {
 	const REM = 'rem';
 
 	/**
-	 *
 	 * @var \Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $input = '';
 
 	/**
-	 *
 	 * @var \Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $data = [];
@@ -76,7 +72,6 @@ class NDLParser {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getKeys() {
@@ -90,7 +85,6 @@ class NDLParser {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param mixed $default
 	 * @return string

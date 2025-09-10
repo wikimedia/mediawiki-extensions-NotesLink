@@ -5,7 +5,6 @@ namespace NotesLink;
 class NDLFactory {
 
 	/**
-	 *
 	 * @var \Config
 	 */
 	protected $config = null;
@@ -32,7 +31,6 @@ class NDLFactory {
 	}
 
 	/**
-	 *
 	 * @param NDLParser $parser
 	 * @return NDLLinkRenderer
 	 */

@@ -5,13 +5,11 @@ namespace NotesLink\Hook;
 abstract class ParserFirstCallInit extends \NotesLink\Hook {
 
 	/**
-	 *
 	 * @var \Parser
 	 */
 	protected $parser = null;
 
 	/**
-	 *
 	 * @param \Parser &$parser
 	 * @return bool
 	 */
@@ -26,7 +24,6 @@ abstract class ParserFirstCallInit extends \NotesLink\Hook {
 	}
 
 	/**
-	 *
 	 * @param \IContextSource $context
 	 * @param \Config $config
 	 * @param \Parser &$parser

@@ -5,13 +5,11 @@ namespace NotesLink;
 class NDLLinkRenderer {
 
 	/**
-	 *
 	 * @var \Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var NDLParser
 	 */
 	protected $parser = null;

@@ -10,7 +10,6 @@ class AddNDLParserHook extends \NotesLink\Hook\ParserFirstCallInit {
 	}
 
 	/**
-	 *
 	 * @param string $input
 	 * @return string
 	 */
