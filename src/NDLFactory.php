@@ -2,6 +2,8 @@
 
 namespace NotesLink;
 
+use MediaWiki\Title\Title;
+
 class NDLFactory {
 
 	/**
@@ -19,10 +21,10 @@ class NDLFactory {
 
 	/**
 	 * @param string $input
-	 * @param \Title|null $title
+	 * @param Title|null $title
 	 * @return NDLParser|null
 	 */
-	public function newParserFromInput( $input, ?\Title $title = null ) {
+	public function newParserFromInput( $input, ?Title $title = null ) {
 		if ( !$title ) {
 			$title = \RequestContext::getMain()->getTitle();
 		}

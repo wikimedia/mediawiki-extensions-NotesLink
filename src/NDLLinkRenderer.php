@@ -2,6 +2,8 @@
 
 namespace NotesLink;
 
+use MediaWiki\Html\Html;
+
 class NDLLinkRenderer {
 
 	/**
@@ -50,7 +52,7 @@ class NDLLinkRenderer {
 		if ( $this->parser->get( NDLParser::REM, false ) ) {
 			$content = $this->parser->get( NDLParser::REM );
 		}
-		return \Html::element( 'a', [
+		return Html::element( 'a', [
 			'href' => $href,
 			'class' => 'external noteslink',
 			'title' => strip_tags( $content ),
