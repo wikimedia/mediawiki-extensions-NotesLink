@@ -2,12 +2,14 @@
 
 namespace NotesLink;
 
+use MediaWiki\Config\GlobalVarConfig;
+
 class Config extends \MultiConfig {
 
 	public function __construct() {
 		parent::__construct( [
-			new \GlobalVarConfig( 'noteslink' ),
-			new \GlobalVarConfig( 'wg' ),
+			new GlobalVarConfig( 'noteslink' ),
+			new GlobalVarConfig( 'wg' ),
 		] );
 	}
 
