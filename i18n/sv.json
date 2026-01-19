@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stefan2255"
+		]
+	},
+	"noteslink-desc": "Lägger till<code><nowiki><NDL></NDL></nowiki></code> tagg, som möjliggör rendering av \"Notes Data Link\" (NDL)-kod som en webbtillgänglig länk"
+}
