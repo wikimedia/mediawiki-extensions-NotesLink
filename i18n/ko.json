@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415"
+		]
+	},
+	"noteslink-desc": "\"Notes Data Link\" (NDL) 코드를 웹에서 접근 가능한 링크로 렌더링할 수 있도록 하는 <code><nowiki><NDL></NDL></nowiki></code> 태그를 추가합니다"
+}
